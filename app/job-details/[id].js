@@ -1,4 +1,4 @@
-import { Text, View, SafeAreaView, ScrollView, ActivityIndicator, RefreshControl} from 'react-native';
+import { Text, View, SafeAreaView, ScrollView, ActivityIndicator, RefreshControl, Share} from 'react-native';
 import { Stack, useRouter, useSearchParams } from 'expo-router';
 import { useCallback, useState } from 'react';
 
@@ -14,6 +14,26 @@ const JobDetails = () => {
 
     const [refreshing, setRefreshing] = useState(false);
     const [activeTab, setActiveTab] = useState(tabs[0]);
+
+    const handleShare = async () => {
+        try {
+            const result = await Share.share({
+            message: `Check this job vacancy: ${data[0]?.job_google_link ?? 'https://careers.google.com/jobs/results'}`,
+        });
+        if (result.action === Share.sharedAction) {
+            if (result.activityType) {
+              // Shared successfully
+            } else {
+              // Shared successfully
+            }
+        } else if (result.action === Share.dismissedAction) {
+            // Share canceled
+        }
+        } catch (error) {
+            alert(`Error sharing: ${error.message}`);
+            console.log('Error sharing:', error.message);
+        }
+    };
 
     const onRefresh = useCallback(() => {
         setRefreshing(true);
@@ -68,6 +88,7 @@ const JobDetails = () => {
                     <ScreenHeaderBtn 
                         iconUrl={icons.share}
                         dimension='60%'
+                        handlePress={handleShare}
                     />
                 ),
                 headerTitle: ''
