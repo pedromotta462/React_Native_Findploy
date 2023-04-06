@@ -5,7 +5,7 @@ import { useRouter } from 'expo-router'
 import styles from './welcome.style'
 import { icons, SIZES } from '../../../constants'
 
-const jobTypes = ["Full-time", "Part-time", "Contractor", "Self-Employee", "Internship"];
+const jobTypes = ["Full-time", "Part-time", "Contractor", "Internship"];
 
 const Welcome = ({searchTerm, setSearchTerm, handleClick}) => {
   const router = useRouter();
@@ -23,7 +23,7 @@ const Welcome = ({searchTerm, setSearchTerm, handleClick}) => {
           <TextInput
             style={styles.searchInput}
             value={searchTerm}
-            onChange={(text) => setSearchTerm(text)}
+            onChangeText={(text) => setSearchTerm(text)}
             placeholder='What are you looking for?'
           />
         </View>
