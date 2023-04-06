@@ -4,8 +4,11 @@
     "web": {
       "bundler": "metro"
     },
-    "name": "React_Native_app",
-    "slug": "React_Native_app",
-    "icon": "assets/appIcon/favicon-32x32.png"
+    "name": "Findploy",
+    "slug": "Findploy",
+    "icon": "assets/appIcon/favicon-32x32.png",
+    "android": {
+      "package": "com.findploy.app"
+    }
   }
 }

@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
@@ -16,7 +16,7 @@
     "expo-status-bar": "~1.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.71.3",
+    "react-native": "0.71.6",
     "react-native-dotenv": "^3.4.8",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-reanimated": "~2.14.4",
@@ -36,7 +36,20 @@
     "metro": "^0.73.7",
     "metro-resolver": "^0.73.7"
   },
-  "name": "react_native_app",
+  "name": "findploy",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "description": "Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedromotta462/React_Native_Findploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedromotta462/React_Native_Findploy/issues"
+  },
+  "homepage": "https://github.com/pedromotta462/React_Native_Findploy#readme"
 }
