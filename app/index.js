@@ -4,6 +4,7 @@ import { Stack, useRouter } from "expo-router";
 
 import { COLORS, icons, images, SIZES } from '../constants';
 import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from '../components'
+import ScreenHeaderTitle from "../components/common/header/ScreenHeaderTitle";
 
 const Home = () => {
     const router = useRouter();
@@ -23,7 +24,10 @@ const Home = () => {
                     headerRight: () => (
                         <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
                     ),
-                    headerTitle: ""
+                    headerTitleAlign: 'center',
+                    headerTitle: () => (
+                        <ScreenHeaderTitle iconUrl={images.findploylogo} dimension="100%" />
+                    )
                 }}
             />
             <ScrollView showsHorizontalScrollIndicator={false}>
