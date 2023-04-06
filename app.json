@@ -5,6 +5,7 @@
       "bundler": "metro"
     },
     "name": "React_Native_app",
-    "slug": "React_Native_app"
+    "slug": "React_Native_app",
+    "icon": "assets/appIcon/"
   }
 }
