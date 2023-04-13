@@ -17,7 +17,7 @@ obs: o idioma está em inglês
 
 ## Instalação
 
-Para usar o projeto no seu celular, basta baixar o expo go na sua app store e scanear o qr code no [link da aplicação]().
+Para usar o projeto no seu celular, basta baixar o expo go na sua app store e scanear o qr code no [link da aplicação](https://expo.dev/@pedromotta462/Findploy).
 
 Vale ressaltar que no projeto é utilizada apenas o plano basico para utilizar a api, por isso existe uma limitação de 500 requests/mês.Então se a aplicação apresentar algum erro nas requisições, talvez esse limite tenha sido atingido.
 ## Documentação da api
