@@ -10,10 +10,10 @@ obs: o idioma está em inglês
 ![App Screenshot](/assets/screenshots/1.jpeg)
 
  - Tela trabalhos(tela mostrando os trabalhos que foi pesquisado)
-![App Screenshot](/assets/screenshots/2.jpeg)
+![App Screenshot](/assets/screenshots/3.jpeg)
 
  - Tela detalhes(tela mostrando os detables da vaga)
-![App Screenshot](/assets/screenshots/3.jpeg)
+![App Screenshot](/assets/screenshots/2.jpeg)
 
 ## Instalação
 
