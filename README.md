@@ -1,15 +1,28 @@
-# Expo Router Example
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+# Findploy
 
-## 🚀 How to use
+Projeto utilizando react native e expo cli,  para desenvolver um aplicativo de busca de trabalhos, utilizando o rapid api para consumir uma api externa que fornece as informações das vagas.
 
-```sh
-npx create-react-native-app -t with-router
-```
+obs: o idioma está em inglês
+## Screenshots
 
-## 📝 Notes
+ - Tela inicial(com o usuário já logado)
+![App Screenshot](/assets/screenshots/1.jpeg)
 
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
-- [Request for Comments](https://github.com/expo/router/discussions/1)
+ - Tela trabalhos(tela mostrando os trabalhos que foi pesquisado)
+![App Screenshot](/assets/screenshots/2.jpeg)
+
+ - Tela detalhes(tela mostrando os detables da vaga)
+![App Screenshot](/assets/screenshots/3.jpeg)
+
+
+
+## Instalação
+
+Para usar o projeto no seu celular, basta baixar o expo go na sua app store e scanear o qr code no [link da aplicação]().
+
+Vale ressaltar que no projeto é utilizada apenas o plano basico para utilizar a api, por isso existe uma limitação de 500 requests/mês.Então se a aplicação apresentar algum erro nas requisições, talvez esse limite tenha sido atingido.
+## Documentação da api
+
+[JSearch](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch)
+

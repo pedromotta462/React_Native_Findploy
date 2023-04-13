@@ -1,4 +1,4 @@
-import profile from "../assets/images/kemal.jpg";
+import profile from "../assets/images/file.jpg";
 import findploylogo from "../assets/images/findploy_logo.png";
 
 
