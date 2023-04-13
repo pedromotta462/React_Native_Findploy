@@ -3,9 +3,29 @@ import { TouchableOpacity, Image } from 'react-native'
 
 import styles from './screenheader.style'
 
-const ScreenHeaderBtn = ({ iconUrl, dimension, handlePress }) => {
+import { GoogleAuthProvider, signInWithPopup, signInWithCredential  } from 'firebase/auth'
+import { auth } from '../../../firebase'
+
+const ScreenHeaderBtn = ({ iconUrl, dimension }) => {
+
+  const handleGoogleSignIn = async () => {
+
+    const provider = new GoogleAuthProvider();
+
+    try {
+      const { idToken } = await GoogleSignIn.signInAsync()
+  
+      const credential = provider.credential(idToken)
+      const { user } = await signInWithCredential(auth, credential)
+  
+      console.log(user)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   return (
-    <TouchableOpacity style={styles.btnContainer} onPress={handlePress}>
+    <TouchableOpacity style={styles.btnContainer} onPress={() => {}}>
       <Image
         source={iconUrl}
         resizeMode='cover'
