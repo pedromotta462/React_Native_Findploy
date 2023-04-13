@@ -1,7 +1,7 @@
 
 # Findploy
 
-Projeto utilizando react native e expo cli,  para desenvolver um aplicativo de busca de trabalhos, utilizando o rapid api para consumir uma api externa, fazendo as requests por meio do axios, que fornece as informações das vagas.
+Projeto utilizando react native e expo cli, para desenvolver um aplicativo de busca de trabalhos, utilizando o rapid api para consumir uma api externa, fazendo as requests por meio do axios, que fornece as informações das vagas.
 
 obs: o idioma está em inglês
 ## Screenshots
